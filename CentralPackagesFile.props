@@ -1,0 +1,22 @@
+<!--
+ * CentralPackagesFile.props
+ * 
+ *   Created: 2022-11-23-07:50:14
+ *   Modified: 2022-11-23-07:50:14
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+	<PropertyGroup>
+		<CentralPackagesFileName>Packages.$(Configuration).pkgs</CentralPackagesFileName>
+    <CentralPackagesFile>$([MSBuild]::GetDirectoryNameOfFileAbove("$(MSBuildThisFileDirectory)", "Packages/$(CentralPackagesFileName)"))/Packages/$(CentralPackagesFileName)</CentralPackagesFile>
+	</PropertyGroup>  
+	<Target Name="CustomAfterCentralPackageVersions" BeforeTargets="CheckPackageReferences">
+    <Message Text="CentralPackagesFile: $(CentralPackagesFile)" Importance="High" />
+    <Message Text="Build Configuration: $(Configuration)" />
+  </Target>
+</Project>
