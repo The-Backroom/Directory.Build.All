@@ -1,8 +1,8 @@
 <!--
- * CentralPackageVersions.targets
+ * NuGetPush.targets
  * 
- *   Created: 2022-11-23-06:12:08
- *   Modified: 2022-11-23-06:12:09
+ *   Created: 2022-11-27-05:23:44
+ *   Modified: 2022-11-27-05:23:44
  * 
  *   Author: Justin Chase <justin@justinwritescode.com>
  *   
@@ -10,4 +10,4 @@
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
 
-<Project Sdk="Microsoft.Build.CentralPackageVersions" />
+<Project Sdk="NuGetPush" />
