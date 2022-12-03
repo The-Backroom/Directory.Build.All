@@ -1,0 +1,18 @@
+<!--
+ AzureFunctions.props
+ 
+   Created: 2022-10-31-09:11:30
+   Modified: 2022-10-31-09:11:30
+ 
+   Authors: 
+     Justin Chase <justin@thebackroom.bot>
+     Municipal Drew <drew@wheatleythecat.com>
+   
+   Copyright © 2022 Justin Chase & Municipal Drew, All Rights Reserved
+      License: MIT (https://opensource.org/licenses/MIT)
+-->
+<Project>
+  <PropertyGroup>
+    <AzureFunctionsVersion>v4</AzureFunctionsVersion>
+  </PropertyGroup>
+</Project>

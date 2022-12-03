@@ -1,0 +1,24 @@
+<!--
+ * PackageTags.props
+ * 
+ *   Created: 2022-12-01-05:58:04
+ *   Modified: 2022-12-01-05:59:20
+ * 
+ *   Authors: 
+ *     Justin Chase <justin@thebackroom.bot>
+ *     Municipal Drew <drew@wheatleythecat.com>
+ *   
+ *   Copyright © 2022 Justin Chase & Municipal Drew, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+  <ItemGroup>
+    <PackageTag Include="thebackroom" />
+    <PackageTag Include="the-backroom" />
+    <PackageTag Include="backroom" />
+    <PackageTag Include="municipaldrew" />
+    <PackageTag Include="gay" />
+    <PackageTag Include="pnp" />
+  </ItemGroup>
+</Project>

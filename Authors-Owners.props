@@ -1,0 +1,32 @@
+<!--
+ * Authors-Owners.props
+ * 
+ *   Created: 2022-12-01-05:58:04
+ *   Modified: 2022-12-01-05:59:51
+ * 
+ *   Authors: 
+ *     Justin Chase <justin@thebackroom.bot>
+ *     Municipal Drew <drew@wheatleythecat.com>
+ *   
+ *   Copyright © 2022 Justin Chase & Municipal Drew, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+  <ItemGroup>
+    <Author Include="Justin Chase" Email="justin@thebackroom.app" />
+    <Author Include="Municipal Drew" Email="drew@wheatleythecat.com" />
+  </ItemGroup>
+  <ItemGroup>
+    <Owner Include="Justin Chase" Email="justin@justinwritescode.com" />
+    <Owner Include="Municipal Drew" Email="drew@wheatleythecat.com" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <GetPackageMetadataDependsOn>
+      $(GetPackageMetadataDependsOn);
+      SetPackageAuthors;
+      SetPackageOwners
+    </GetPackageMetadataDependsOn>
+  </PropertyGroup>
+</Project>
