@@ -10,16 +10,16 @@
       License: MIT (https://opensource.org/licenses/MIT)
 -->
 <Project>
-  <!-- <ItemGroup>
+  <ItemGroup>
     <ProjectReference 
       Include="@(CodeGenerator->'%(ProjectPath)')"
       OutputItemType="Analyzer" ReferenceOutputAssembly="false" 
-      Condition="'$(Configuration)' == 'Local' And (Exists(@(CodeGenerator->'%(ProjectPath)')) Or '@(CodeGenerator->'%(ProjectPath)')' == '')" />
+      Condition="('$(Configuration)' == 'Local' Or '$(Configuration)' == 'Testing') And (Exists(@(CodeGenerator->'%(ProjectPath)')) Or '@(CodeGenerator->'%(ProjectPath)')' == '')" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference 
       Include="%(CodeGenerator.PackageName)"
       IncludeAssets="Analyzers" PrivateAssets="All" 
-      Condition="'$(Configuration)' != 'Local'" />
-  </ItemGroup> -->
+      Condition="'$(Configuration)' != 'Local' And '$(Configuration)' != 'Testing'" />
+  </ItemGroup>
 </Project>
