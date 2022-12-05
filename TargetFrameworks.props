@@ -12,7 +12,7 @@
 
 <Project>
     <PropertyGroup>
-      <TargetFramework Condition="'$(TargetFramework)' == '' And '$(TargetFrameworks)' == ''">netstandard2.0</TargetFramework>
+      <!-- <TargetFramework Condition="'$(TargetFramework)' == '' And '$(TargetFrameworks)' == ''">netstandard2.0</TargetFramework> -->
       <!-- <TargetFrameworks Condition="'$(TargetFrameworks)' == ''">$(TargetFramework)</TargetFrameworks> -->
     </PropertyGroup>
 </Project>
