@@ -13,7 +13,7 @@
 
 <Project>
 	<PropertyGroup>
-      <AssemblyVersion Condition="'$(Version)' != ''">$([System.Text.RegularExpressions.Regex]::Replace("$(Version)", "\-.*", ""))</AssemblyVersion>
+    <AssemblyVersion Condition="'$(Version)' != ''">$([System.Text.RegularExpressions.Regex]::Replace("$(Version)", "\-.*", ""))</AssemblyVersion>
 	</PropertyGroup>
   <!-- <PropertyGroup>
     <GetPackageVersionDependsOn>

@@ -1,19 +1,17 @@
 <!--
- PackageOutputPath.props
- 
-   Created: 2022-10-22-03:21:36
-   Modified: 2022-10-29-02:48:40
- 
-   Author: Justin Chase <justin@justinwritescode.com>
-   
-   Copyright © 2022 Justin Chase, All Rights Reserved
-      License: MIT (https://opensource.org/licenses/MIT)
+ * PackageOutputPath.props
+ * 
+ *   Created: 2022-12-03-05:40:39
+ *   Modified: 2022-12-05-04:29:47
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
 -->
 
 <Project>
   <PropertyGroup>
-    <_GitRoot>$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildProjectDirectory), ".git/HEAD"))</_GitRoot>
-    <_GitRoot Condition="'$(_GitRoot)' == ''">$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildProjectDirectory), ".git"))</_GitRoot>
     <PackageOutputPath>$(_GitRoot)/artifacts</PackageOutputPath>  
   </PropertyGroup>
 </Project>
