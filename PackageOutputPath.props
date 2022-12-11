@@ -12,6 +12,7 @@
 
 <Project>
   <PropertyGroup>
-    <PackageOutputPath>$(_GitRoot)/artifacts</PackageOutputPath>  
+    <PackageOutputPath>$(_GitRoot)/artifacts/$(MSBuildProjectName)</PackageOutputPath>  
+    <OutputPath>$(_GitRoot)/artifacts/$(MSBuildProjectName)</OutputPath>  
   </PropertyGroup>
 </Project>

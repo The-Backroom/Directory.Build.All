@@ -11,10 +11,6 @@
 -->
 
 <Project>
-	<PropertyGroup>
-		<Configurations>Local;Debug;Staging;Release;Testing</Configurations>
-    <Configuration Condition="'$(Configuration)' == ''">Local</Configuration>
-	</PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Local' " Label="Local Configuration">
 		<DebugType>full</DebugType>
 		<Optimize>false</Optimize>
