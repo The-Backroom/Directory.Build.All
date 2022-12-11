@@ -19,4 +19,11 @@
       <AssemblyVersion Condition="'$(PackageVersionOverride)' != ''">$([System.Text.RegularExpressions.Regex]::Replace("$(PackageVersionOverride)", "\-.*", ""))</AssemblyVersion>
       <InformationalVersion Condition="'$(PackageVersionOverride)' != ''">$(PackageVersionOverride)</InformationalVersion> -->
     </PropertyGroup>
+    <PropertyGroup>
+      <InjectThisAssemblyProjectDependsOn>
+        $(InjectThisAssemblyProjectDependsOn);
+        GetPackageVersion;
+        GetPackageMetadata;
+      </InjectThisAssemblyProjectDependsOn>
+    </PropertyGroup>
 </Project>
