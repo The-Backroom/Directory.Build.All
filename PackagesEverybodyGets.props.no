@@ -12,6 +12,6 @@
 
 <Project Condition="'$(ImportGlobalPackages)' != 'false'">
   <ItemGroup>
-    <PackageReference Include="System.All.Usings" Condition="'$(PackageId)' != 'System.All'" />
+    <PackageReference Include="System.All.Usings" Condition="'$(PackageId)' != 'System.All' And '$(PackageId)' != 'System.All.Usings'" />
   </ItemGroup>
 </Project>
