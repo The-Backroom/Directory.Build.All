@@ -13,7 +13,10 @@
 <Project>
 	<PropertyGroup>
 		<CentralPackagesFileName>Packages.$(Configuration).pkgs</CentralPackagesFileName>
+		<VersionsPropsFileName>Versions.props</VersionsPropsFileName>
     <CentralPackagesFile>$([MSBuild]::GetDirectoryNameOfFileAbove("$(MSBuildThisFileDirectory)", "Packages/$(CentralPackagesFileName)"))/Packages/$(CentralPackagesFileName)</CentralPackagesFile>
+    <VersionsPropsFile>$([MSBuild]::GetDirectoryNameOfFileAbove("$(MSBuildThisFileDirectory)", "Packages/$(VersionsPropsFileName)"))/Packages/$(VersionsPropsFileName)</VersionsPropsFile>
+    <CustomBeforeCentralPackageVersionsProps>$(CustomBeforeCentralPackageVersionsProps);$(VersionsPropsFile)</CustomBeforeCentralPackageVersionsProps>
 	</PropertyGroup>  
 	<Target Name="CustomAfterCentralPackageVersions" BeforeTargets="CheckPackageReferences">
     <Message Text="CentralPackagesFile: $(CentralPackagesFile)" />
