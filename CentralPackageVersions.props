@@ -11,10 +11,10 @@
 -->
 
 <Project>
-    <PropertyGroup>
-      <EnableCentralPackageVersions>true</EnableCentralPackageVersions>
-      <EnableGlobalPackageReferences>true</EnableGlobalPackageReferences>
-      <EnablePackageVersionOverride>true</EnablePackageVersionOverride>
-      <EnablePackageVersionOverrideWithoutCentralVersion>true</EnablePackageVersionOverrideWithoutCentralVersion>
-    </PropertyGroup>
+  <PropertyGroup>
+    <EnableCentralPackageVersions>true</EnableCentralPackageVersions>
+    <EnableGlobalPackageReferences>true</EnableGlobalPackageReferences>
+    <EnablePackageVersionOverride>true</EnablePackageVersionOverride>
+    <EnablePackageVersionOverrideWithoutCentralVersion>true</EnablePackageVersionOverrideWithoutCentralVersion>
+  </PropertyGroup>
 </Project>
