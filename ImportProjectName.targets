@@ -13,4 +13,8 @@
 <Project>
   <Import Project="$(MSBuildProjectDirectory)/$(MSBuildProjectName).targets"
       Condition="Exists('$(MSBuildProjectDirectory)/$(MSBuildProjectName).targets')" />
+  <PropertyGroup>
+    <ProjectReferenceImportTargets>@(ProjectReference->'%(RootDir)%(Directory)%(Filename).targets')</ProjectReferenceImportTargets>
+  </PropertyGroup>
+  <Import Project="$(ProjectReferenceImportProps)" Condition="Exists($(ProjectReferenceImportProps))" />
 </Project>

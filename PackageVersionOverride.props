@@ -14,6 +14,7 @@
     <PropertyGroup>
       <MinVerVersionOverride Condition="'$(PackageVersionOverride)' != ''">$(PackageVersionOverride)</MinVerVersionOverride>
       <AssemblyVersion Condition="'$(PackageVersionOverride)' != ''">$([System.Text.RegularExpressions.Regex]::Replace("$(PackageVersionOverride)", "\-.*", ""))</AssemblyVersion>
+      <Version Condition="'$(PackageVersionOverride)' != ''">$([System.Text.RegularExpressions.Regex]::Replace("$(PackageVersionOverride)", "\-.*", ""))</Version>
       <!-- <PackageVersion Condition="'$(PackageVersionOverride)' != ''">$(PackageVersionOverride)</PackageVersion>
       <Version Condition="'$(PackageVersionOverride)' != ''">$(PackageVersionOverride)l</Version>
       <AssemblyVersion Condition="'$(PackageVersionOverride)' != ''">$([System.Text.RegularExpressions.Regex]::Replace("$(PackageVersionOverride)", "\-.*", ""))</AssemblyVersion>

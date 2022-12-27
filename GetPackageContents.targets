@@ -20,6 +20,7 @@
 			<_PackageFile Include="$(OutputPath)*.xml" />
 			<_PackageFile Include="$(OutputPath)*.pdb" /> -->
 			<PackageFile Include="@(_PackageFile)" PackagePath="lib/$(TargetFramework)/%(_PackageFile.RecursiveDir)%(_PackageFile.Filename)%(_PackageFile.Extension)" Condition="Exists(%(_PackageFile.Identity))" />
+      <_PackageFile Remove="@(_PackageFile)" />
 		</ItemGroup>
 	</Target>
 	<!-- <PropertyGroup>
