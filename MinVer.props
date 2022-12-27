@@ -21,4 +21,6 @@
     <MinVerAutoIncrement>patch</MinVerAutoIncrement>
     <MinVerMinimumMajorMinor>0.0</MinVerMinimumMajorMinor>
   </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
 </Project>

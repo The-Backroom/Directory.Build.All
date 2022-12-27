@@ -10,12 +10,28 @@
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
 <Project>
+  <ItemGroup Condition="'@(PackageReference->AnyHaveMetadataValue('Identity', 'ThisAssembly.Project'))' == 'true'">
+    <ProjectProperty Include="PackageVersion" />
+    <ProjectProperty Include="Version" />
+    <ProjectProperty Include="Title" />
+    <ProjectProperty Include="Description" />
+    <ProjectProperty Include="TermsOfServiceUrl" />
+    <ProjectProperty Include="Company" />
+    <ProjectProperty Include="Owners" />
+    <ProjectProperty Include="Authors" />
+    <ProjectProperty Include="PackageLicenseExpression" />
+    <ProjectProperty Include="LicenseExpression" />
+    <ProjectProperty Include="ContactEmail" />
+    <ProjectProperty Include="PackageProjectUrl" />
+    <ProjectProperty Include="PackageTags" />
+    <ProjectProperty Include="RepositoryUrl" />
+    <ProjectProperty Include="AssemblyVersion" />
+    <ProjectProperty Include="FileVersion" />
+    <ProjectProperty Include="Version" />
+    <ProjectProperty Include="SwaggerTheme" />
+  </ItemGroup>
   <ItemGroup>
-    <CompilerVisibleProperty Include="Authors" />
-    <CompilerVisibleProperty Include="Owners" />
-    <CompilerVisibleProperty Include="Copyright" />
-    <CompilerVisibleProperty Include="PackageProjectUrl" />
-    <CompilerVisibleProperty Include="PackageLicenseExpression" />
+    <CompilerVisibleProperty Include="@(ProjectProperty)" />
   </ItemGroup>
   <ItemGroup>
     <CompilerVisibleItemMetadata Include="Author" MetadataName="Email" />
