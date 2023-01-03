@@ -10,7 +10,7 @@
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
 <Project>
-  <ItemGroup Condition="'@(PackageReference->AnyHaveMetadataValue('Identity', 'ThisAssembly.Project'))' == 'true'">
+  <ItemGroup>
     <ProjectProperty Include="PackageVersion" />
     <ProjectProperty Include="Version" />
     <ProjectProperty Include="Title" />
