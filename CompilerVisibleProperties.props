@@ -6,29 +6,28 @@
  * 
  *   Author: Justin Chase <justin@justinwritescode.com>
  *   
- *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *   Copyright © 2022-2023 Justin Chase, All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
 <Project>
   <ItemGroup>
-    <ProjectProperty Include="PackageVersion" />
-    <ProjectProperty Include="Version" />
-    <ProjectProperty Include="Title" />
-    <ProjectProperty Include="Description" />
-    <ProjectProperty Include="TermsOfServiceUrl" />
-    <ProjectProperty Include="Company" />
-    <ProjectProperty Include="Owners" />
+    <ProjectProperty Include="AssemblyVersion" />
     <ProjectProperty Include="Authors" />
-    <ProjectProperty Include="PackageLicenseExpression" />
-    <ProjectProperty Include="LicenseExpression" />
+    <ProjectProperty Include="Company" />
     <ProjectProperty Include="ContactEmail" />
+    <ProjectProperty Include="Description" />
+    <ProjectProperty Include="FileVersion" />
+    <ProjectProperty Include="LicenseExpression" />
+    <ProjectProperty Include="Owners" />
+    <ProjectProperty Include="PackageLicenseExpression" />
     <ProjectProperty Include="PackageProjectUrl" />
     <ProjectProperty Include="PackageTags" />
+    <ProjectProperty Include="PackageVersion" />
     <ProjectProperty Include="RepositoryUrl" />
-    <ProjectProperty Include="AssemblyVersion" />
-    <ProjectProperty Include="FileVersion" />
-    <ProjectProperty Include="Version" />
     <ProjectProperty Include="SwaggerTheme" />
+    <ProjectProperty Include="TermsOfServiceUrl" />
+    <ProjectProperty Include="Title" />
+    <ProjectProperty Include="Version" />
   </ItemGroup>
   <ItemGroup>
     <CompilerVisibleProperty Include="@(ProjectProperty)" />

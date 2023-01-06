@@ -6,7 +6,7 @@
  
    Author: Justin Chase <justin@justinwritescode.com>
    
-   Copyright © 2022 Justin Chase, All Rights Reserved
+   Copyright © 2022-2023 Justin Chase, All Rights Reserved
       License: MIT (https://opensource.org/licenses/MIT)
 -->
 
@@ -78,6 +78,9 @@
             Description="Use .ConfigureAwait(bool)"
             Category="Reliability"
             Reason="this is a function, not a UI app" />
+    <NoWarn Include="NETSDK1080"
+            Category=".NET"
+            Reason="I don't know why the fuck this warning keeps popping up; I AM using a FrameworkReference!!" />
   </ItemGroup>
   <PropertyGroup Condition="'$(DisableMostAnnoyingWarnings)' != 'false'">
     <NoWarn>$(NoWarn);@(NoWarn->'%(Identity)');</NoWarn>

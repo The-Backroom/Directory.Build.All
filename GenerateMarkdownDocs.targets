@@ -16,11 +16,11 @@
   </PropertyGroup>
   <ItemGroup>
     <DocsParameter Include="generate-doc" />
-    <DocsParameter Include="$(MSBuildProjectFullPath)" />
+    <DocsParameter Include="." />
     <DocsParameter Include="--additional-xml-documentation './**/*.xml'" /> 
-    <DocsParameter Include="--file-log '$(FileLog)'" /> 
-    <DocsParameter Include="--file-log-verbosity diag" /> 
-    <DocsParameter Include=" --group-by-common-namespace" /> 
+    <!-- <DocsParameter Include="-file-log '$(FileLog)'" />  -->
+    <!-- <DocsParameter Include="-file-log-verbosity diag" />  -->
+    <DocsParameter Include="--group-by-common-namespace" /> 
     <DocsParameter Include="--heading '$(Title)'" /> 
     <DocsParameter Include="--host github" /> 
     <DocsParameter Include="--ignored-names 'ThisAssembly'" /> 

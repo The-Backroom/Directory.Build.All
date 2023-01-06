@@ -1,8 +1,8 @@
 <!--
- * UserSecrets.props
+ * ImplicitUsings.props
  * 
- *   Created: 2022-11-23-06:14:24
- *   Modified: 2022-11-23-06:14:25
+ *   Created: 2023-01-06-02:57:58
+ *   Modified: 2023-01-06-02:57:58
  * 
  *   Author: Justin Chase <justin@justinwritescode.com>
  *   
@@ -11,7 +11,7 @@
 -->
 
 <Project>
-	<PropertyGroup>
-    <UserSecretsId>f46585c5-564a-6584-1234-eba29ed0cfc7</UserSecretsId>
-	</PropertyGroup>
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
 </Project>
