@@ -36,4 +36,10 @@
     <CompilerVisibleItemMetadata Include="Author" MetadataName="Email" />
     <CompilerVisibleItemMetadata Include="Author" MetadataName="Identity" />
   </ItemGroup>
+  <PropertyGroup>
+    <InjectThisAssemblyProjectDependsOn>
+      $(InjectThisAssemblyProjectDependsOn);
+      RemoveDuplicateProjectProperties
+    </InjectThisAssemblyProjectDependsOn>
+  </PropertyGroup>
 </Project>
