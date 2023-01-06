@@ -1,8 +1,8 @@
 <!--
- * AssemblySigning.props
+ * ImplicitUsings.props
  * 
- *   Created: 2022-10-21-11:40:42
- *   Modified: 2022-11-04-10:09:52
+ *   Created: 2023-01-06-02:57:58
+ *   Modified: 2023-01-06-02:57:58
  * 
  *   Author: Justin Chase <justin@justinwritescode.com>
  *   
@@ -12,7 +12,6 @@
 
 <Project>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)../assets/The-Backroom.snk</AssemblyOriginatorKeyFile>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 </Project>
