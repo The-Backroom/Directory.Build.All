@@ -13,6 +13,6 @@
 <Project>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)../assets/The-Backroom.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)../ContentFiles/The-Backroom.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 </Project>
