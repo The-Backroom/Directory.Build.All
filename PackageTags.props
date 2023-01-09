@@ -1,17 +1,16 @@
 <!--
- * PackageTags.props
- * 
- *   Created: 2022-12-01-05:58:04
- *   Modified: 2022-12-01-05:59:20
- * 
- *   Authors: 
- *     Justin Chase <justin@thebackroom.bot>
- *     Municipal Drew <drew@wheatleythecat.com>
- *   
- *   Copyright © 2022-2023 Justin Chase & Municipal Drew, All Rights Reserved
- *      License: MIT (https://opensource.org/licenses/MIT)
+ PackageTags.props
+ 
+   Created: 2022-10-31-07:11:15
+   Modified: 2022-10-31-07:11:15
+ 
+   Authors: 
+     Justin Chase <justin@thebackroom.bot>
+     Municipal Drew <drew@wheatleythecat.com>
+   
+   Copyright © 2022-2023 Justin Chase & Municipal Drew, All Rights Reserved
+      License: MIT (https://opensource.org/licenses/MIT)
 -->
-
 <Project>
   <ItemGroup>
     <PackageTag Include="thebackroom" />
