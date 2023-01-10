@@ -13,6 +13,7 @@
 -->
 <Project>
   <ItemGroup>
+    <PackageTag Remove="@(PackageTag)" />
     <PackageTag Include="thebackroom" />
     <PackageTag Include="the-backroom" />
     <PackageTag Include="backroom" />

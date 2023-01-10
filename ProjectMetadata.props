@@ -1,8 +1,8 @@
 <!--
- * PackageMetadata.props
+ * ProjectMetadats.props
  * 
- *   Created: 2022-10-22-01:38:14
- *   Modified: 2022-11-19-04:05:24
+ *   Created: 2022-12-31-07:32:39
+ *   Modified: 2022-12-31-07:32:39
  * 
  *   Author: Justin Chase <justin@justinwritescode.com>
  *   
@@ -11,19 +11,41 @@
 -->
 
 <Project>
-  <PropertyGroup>
-    <RootNamespace Condition="'$(RootNamespace)' == ''">$(MSBuildProjectName)</RootNamespace>
-    <AssemblyName Condition="'$(AssemblyName)' == ''">$(MSBuildProjectName)</AssemblyName>
-    <AssemblyTitle Condition="'$(AssemblyTitle)' == ''">$(MSBuildProjectName)</AssemblyTitle>
-    <Title Condition="'$(Title)' == ''">$(AssemblyTitle)</Title>
-    <DefaultLanguage>en</DefaultLanguage>
-    <NeutralLanguage>en-US</NeutralLanguage>
-    <LangVersion>preview</LangVersion>
-    <ServerGarbageCollection>true</ServerGarbageCollection>
-    <DebugType>portable</DebugType>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <UseJustinWritesCodeNamespace Condition="'$(UseJustinWritesCodeNamespace)' == ''">true</UseJustinWritesCodeNamespace>
-    <UsePackageReferencesForLocalDependencies>false</UsePackageReferencesForLocalDependencies>
+  <PropertyGroup Condition="'$(UsingMicrosoftNETSdkWeb)' == 'true'">
+    <TermsOfServiceUrl>https://TOS.TheBackroom.bot/</TermsOfServiceUrl>
+    <PackageProjectUrl>https://TheBackroom.bot</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/The-Backroom</RepositoryUrl>
+    <IncludeOpenAPIAnalyzers>true</IncludeOpenAPIAnalyzers>
+    <ContactEmail>bots@TheBackroom.bot</ContactEmail>
+    <Version>0.0.1-Local</Version>
+    <PackageVersion>0.0.1-Local</PackageVersion>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(UsingMicrosoftNETSdkWeb)' == 'true'">
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" />
+    <PackageReference Include="ThisAssembly.Project" />
+    <PackageReference Include="ThisAssembly" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(UsingMicrosoftNETSdkWeb)' == 'true'">
+    <ProjectProperty Include="PackageVersion" />
+    <ProjectProperty Include="Version" />
+    <ProjectProperty Include="Title" />
+    <ProjectProperty Include="Description" />
+    <ProjectProperty Include="TermsOfServiceUrl" />
+    <ProjectProperty Include="Company" />
+    <ProjectProperty Include="Owners" />
+    <ProjectProperty Include="Authors" />
+    <ProjectProperty Include="LicenseExpression" />
+    <ProjectProperty Include="ContactEmail" />
+    <ProjectProperty Include="PackageProjectUrl" />
+    <ProjectProperty Include="PackageTags" />
+    <ProjectProperty Include="RepositoryUrl" />
+    <ProjectProperty Include="AssemblyVersion" />
+    <ProjectProperty Include="FileVersion" />
+    <ProjectProperty Include="Version" />
+    <ProjectProperty Include="SwaggerTheme" />
+  </ItemGroup>
+  <PropertyGroup Condition="'$(UsingMicrosoftNETSdkWeb)' == 'true'">
+    <SwaggerTheme Condition="'$(SwaggerTheme)' == ''">theme-material.css</SwaggerTheme>
   </PropertyGroup>
 </Project>

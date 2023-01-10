@@ -12,22 +12,7 @@
 
 <Project>
   <PropertyGroup>
-    <PackageId Condition="'$(PackageId)' == ''">$(MSBuildProjectName)</PackageId>
-    <Company Condition="'$(Company)' == ''">JustinWritesCode</Company>
-    <Product Condition="'$(Product)' == ''">JustinWritesCode</Product>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <PreserveCompilationContext>true</PreserveCompilationContext>
-    <ServerGarbageCollection>true</ServerGarbageCollection>
-    <DebugType>portable</DebugType>
-    <IsPackagingFile>true</IsPackagingFile>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-  </PropertyGroup>
-  <PropertyGroup>
-    <GetPackageMetadataDependsOn>
-      $(GetPackageMetadataDependsOn);
-      SetLastMinutePackageMetadata;
-    </GetPackageMetadataDependsOn>
+    <Company Condition="'$(Company)' == ''">The Backroom</Company>
+    <Product Condition="'$(Product)' == ''">The Backroom</Product>
   </PropertyGroup>
 </Project>

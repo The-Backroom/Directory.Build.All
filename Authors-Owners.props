@@ -14,10 +14,12 @@
 
 <Project>
   <ItemGroup>
+    <Author Remove="@(Author)" />
     <Author Include="Justin Chase" Email="justin@thebackroom.app" />
     <Author Include="Municipal Drew" Email="drew@wheatleythecat.com" />
   </ItemGroup>
   <ItemGroup>
+    <Owner Remove="@(Owner)" />
     <Owner Include="Justin Chase" Email="justin@justinwritescode.com" />
     <Owner Include="Municipal Drew" Email="drew@wheatleythecat.com" />
   </ItemGroup>
